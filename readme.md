@@ -1,7 +1,9 @@
+
 ### FLUXOGRAMA/DIAGRAMA
 ```
 flowchart LR
-A[Inicio] -->|Firebase| B(Database)
+A[View] -->|Javascript| B(Controller)
+X[Model] -->|Firebase| A[Model]
 B --> |Python| C{APP}
 
 C --> J[Tasks]
@@ -15,8 +17,8 @@ C --> O[Laboratory]
 
 ```mermaid
 flowchart LR
-A[Inicio] -->|Firebase| B(Database)
-X[View] -->|Firebase| A[Inicio]
+A[View] -->|Javascript| B(Controller)
+X[Model] -->|Firebase| A[View]
 B --> |Python| C{APP}
 
 C --> J[Tasks]
@@ -25,7 +27,9 @@ C --> L[Team]
 C --> M[Daily-Notes]
 C --> N[Analytics]
 C --> O[Laboratory]
+
 ```
+
 
 ### 1.0 - FASES DO PROJETO
 
